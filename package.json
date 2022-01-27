@@ -1,0 +1,21 @@
+{
+  "name": "playwright-javascript-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env BROWSER=chromium cucumber-js ./features/**/*.feature -r ./src/steps/**/*.steps.js --publish -f html:./reports/cucumber_report.html"
+  },
+  "author": "Fredy Saldarriaga",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.0",
+    "@playwright/test": "1.16.1",
+    "eslint": "^7.0.0",
+    "prettier": "^2.0.5",
+    "playwright": "1.16.1"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
